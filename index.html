@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camp District 3 en 1 — Administration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">C3</div>
+        <div>
+          <strong>Camp District</strong>
+          <span>Administration</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-view="dashboard"><span>⌂</span> Tableau de bord</button>
+        <button class="nav-item" data-view="participants"><span>♙</span> Participants</button>
+        <button class="nav-item" data-view="tickets"><span>▣</span> Tickets</button>
+        <button class="nav-item" data-view="news"><span>▤</span> Fil d’actualité</button>
+        <button class="nav-item" data-view="matches"><span>⚽</span> Feuilles de match</button>
+        <button class="nav-item" data-view="sponsors"><span>✦</span> Sponsors</button>
+        <button class="nav-item" data-view="partners"><span>◇</span> Partenaires</button>
+        <button class="nav-item" data-view="program"><span>◷</span> Programme</button>
+        <button class="nav-item" data-view="speakers"><span>♟</span> Intervenants</button>
+        <button class="nav-item" data-view="gallery"><span>▧</span> Galerie</button>
+        <button class="nav-item" data-view="notifications"><span>♢</span> Notifications</button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button class="nav-item" data-view="settings"><span>⚙</span> Paramètres</button>
+        <button class="logout" id="logoutBtn"><span>↪</span> Déconnexion</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Ouvrir le menu">☰</button>
+        <div class="breadcrumb">
+          <span>Administration</span>
+          <b>/</b>
+          <strong id="pageTitle">Tableau de bord</strong>
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn" title="Notifications">♢<i></i></button>
+          <div class="admin-profile">
+            <div class="avatar">A</div>
+            <div>
+              <strong>Administrateur</strong>
+              <span>Super admin</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="content" id="content"></section>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
